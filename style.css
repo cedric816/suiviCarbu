@@ -1,0 +1,162 @@
+@media (max-width:700px){
+    body{
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 30% 60% 10%;
+        font-size: 20px;
+        background-color: lightgray;
+        position: relative;
+    }
+    h1{
+        margin-left: 40px;
+        font-size: 28px;
+    }
+    h1::first-letter{
+        color: orange;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    .car{
+        grid-row: 1/2;
+        animation: 5s linear 0.5s running slidein infinite; 
+    }
+    
+    @keyframes slidein {
+        from { margin-left:80% }
+        to   { margin-left:1%; }
+      }
+    .route{
+        grid-row: 2/3;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+}
+@media (min-width: 701px){
+    body{
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 35% 55% 5%;
+        font-size: 20px;
+        background-color: lightgray;
+    }
+    h1{
+        margin-left: 120px;
+        font-size: 38
+    }
+    h1::first-letter{
+        color: orange;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    .car{
+        grid-row: 1/2;
+        animation: 5s linear 0.5s running slidein infinite; 
+    }
+    
+    @keyframes slidein {
+        from { margin-left:80% }
+        to   { margin-left:1%; }
+      }
+    .route{
+        grid-row: 2/3;
+        color: lightgray;
+        text-align: center;
+    }
+}
+header{
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: grey;
+    color: white;
+    background-image: url(pistol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    grid-row: 2/3;
+    display: grid;
+    align-items: center;
+}
+footer{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    min-width: 80%;
+}
+thead, tr{
+    text-align: center;
+}
+th{
+    background-color: grey;
+    color: white;
+}
+tr{
+    background-color: lightgray;
+}
+form{
+    border-left: solid grey 15px;
+    border-bottom: solid grey 5px;
+    border-top: solid grey 2px;
+    border-right: solid grey 2px;
+    padding: 20px;
+    border-radius: 20%;
+    background-color: orange;
+}
+label{
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+input{
+    width: 20%;
+    height: 20px;
+}
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 20px;
+}
+a{
+    font-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+    width: 100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
